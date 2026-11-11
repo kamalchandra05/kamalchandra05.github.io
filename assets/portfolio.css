@@ -11,8 +11,21 @@ a{color:#244c72}button[aria-pressed=true],.project-link:hover,nav a:hover{backgr
 .category,.status{font-size:13px;color:#4a6174}.scale{margin:22px 0;padding:16px 20px;background:#eff5fa}.scale h2{margin:0}.scale ul{margin-bottom:0}
 .gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:18px}
 article{border:1px solid var(--line);border-radius:10px;overflow:hidden}.card-copy{padding:16px}.card-copy h2{margin:4px 0}.project-link{display:inline-block}
-.thumbnail{height:86px;display:flex;align-items:end;gap:8px;padding:16px 22px;background:#e8f0f7;color:#244c72}
-.thumbnail i{display:block;width:19px;height:24px;background:currentColor;border-radius:3px}.thumbnail i:nth-child(2){height:39px}.thumbnail i:nth-child(3){height:52px}
-.theme-ai{background:#fff0e5;color:#a94700}.theme-engineering{background:#e9f2f1;color:#276460}.theme-finance{background:#ecf1ea;color:#426144}
 [hidden]{display:none!important}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
 @media(max-width:650px){main{margin:0}.gallery{grid-template-columns:1fr}}
+
+.portfolio-overview {max-width:1320px;font-size:14px;line-height:1.65}
+.portfolio-overview header {padding:16px 0}
+.portfolio-overview h1 {font-size:clamp(25px,4vw,32px);margin:8px 0 12px}
+.portfolio-overview header p {margin:6px 0}
+.portfolio-overview .scale {margin:16px 0;padding:12px 16px}
+.portfolio-overview .scale ul {display:flex;flex-wrap:wrap;gap:6px 24px;padding:0;list-style:none}
+.portfolio-overview .gallery {grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.portfolio-overview article {border:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:0}
+.portfolio-overview .card-copy {display:flex;flex-direction:column;align-items:flex-start;height:100%;padding:16px}
+.portfolio-overview .card-copy h2 {font-size:17px;margin:4px 0}
+.portfolio-overview .card-copy p {margin:0 0 8px}
+.portfolio-overview .card-copy .category {font-size:11px}
+.portfolio-overview .project-link {margin-top:auto;padding:5px 10px;font-size:13px}
+@media(max-width:900px){.portfolio-overview .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:540px){.portfolio-overview .gallery{grid-template-columns:1fr}}
