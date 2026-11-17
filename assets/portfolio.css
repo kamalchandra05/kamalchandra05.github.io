@@ -29,3 +29,4 @@ article{border:1px solid var(--line);border-radius:10px;overflow:hidden}.card-co
 .portfolio-overview .project-link {margin-top:auto;padding:5px 10px;font-size:13px}
 @media(max-width:900px){.portfolio-overview .gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:540px){.portfolio-overview .gallery{grid-template-columns:1fr}}
+
